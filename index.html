@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Author: Zaida Montano" />
     <!-- Bootstrap CSS -->
     <link
       rel="stylesheet"
@@ -30,7 +31,7 @@
                 Covid19-Tracker
               </h1>
               <p class="main-text lead pl-2 d-none d-md-block">
-                Reliable information in real time
+                Keep safe with reliable information in real time
               </p>
             </div>
           </div>
@@ -40,10 +41,11 @@
     <nav class="navbar navbar-dark navbar-expand-md sticky-top">
       <div class="container">
         <button
-          class="navbar-toggler ml-auto"
+          class="navbar-toggler ml-auto mr-2"
           type="button"
           data-toggle="collapse"
           data-target="#mainNavbar"
+          aria-label="navbar"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -63,18 +65,69 @@
             </li>
           </ul>
         </div>
+        <div class="navbar-text ml-3">
+          <button
+            class="btn btn-info btn-sm px-3"
+            type="button"
+            data-toggle="modal"
+            data-target="#registerForm"
+          >
+            Register
+          </button>
+        </div>
       </div>
     </nav>
-    <div class="container">
-      <div class="row row-content">
-        <div class="col col-md-10"></div>
-        <div class="col"></div>
+    <div class="modal fade" id="registerForm" role="dialog">
+      <div class="modal-dialog modal-sm" role="document">
+        <div class="modal-content">
+          <div class="modal-header bg-info text-white">
+            <h5 class="modal-title lead" id="registerFormLabel">
+              Register for updates
+            </h5>
+            <button class="close text-white" type="button" data-dismiss="modal">
+              <small>x</small>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="name" class="col-form-label lead">Name</label>
+                <input
+                  id="name"
+                  name="name"
+                  type="text"
+                  class="form-control"
+                  placeholder="Enter your name..."
+                />
+              </div>
+              <div class="form-group">
+                <label for="email" class="col-form-label lead">Email</label>
+                <input
+                  id="email"
+                  name="email"
+                  type="email"
+                  class="form-control"
+                  placeholder="Enter your email..."
+                />
+              </div>
+              <div class="form-group">
+                <button
+                  class="btn btn-secondary"
+                  type="submit"
+                  data-dismiss="modal"
+                >
+                  Cancel
+                </button>
+                <button class="btn btn-info" type="submit">Submit</button>
+              </div>
+            </form>
+          </div>
+        </div>
       </div>
     </div>
 
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="/js/scripts.js"></script>
   </body>
 </html>
