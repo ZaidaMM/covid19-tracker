@@ -3,6 +3,7 @@ $color-secondary: hsl(223, 89%, 68%);
 $color-header: hsl(60, 28%, 92%);
 $color-pale: hsl(227, 100%, 98%);
 $color-white: hsl(0, 0%, 100%);
+$color-contrast: hsl(16, 100%, 66%);
 
 $body-bg: hsl(60, 28%, 92%);
 
@@ -38,9 +39,51 @@ h4 {
 }
 .navbar {
   background-color: $color-primary;
+  .navbar-nav {
+    a.nav-link {
+      &:hover,
+      &:focus,
+      &:active {
+        color: $color-contrast;
+      }
+    }
+  }
+
+  .btn-register {
+    background-color: $color-secondary;
+    color: $color-white;
+    transition: filter 0.2s;
+    &:hover {
+      filter: brightness(80%);
+    }
+  }
+}
+.modal-content {
+  .modal-header {
+    background-color: $color-secondary;
+  }
+  .modal-body {
+    .form-group {
+      .btn-register {
+        background-color: $color-secondary;
+        color: $color-white;
+        transition: filter 0.2s;
+        &:hover {
+          filter: brightness(80%);
+        }
+      }
+    }
+  }
+}
+form {
+  #selectCountry {
+    border: 2px solid $color-secondary;
+  }
 }
 .stats-card {
-  border-top: 2px solid $color-secondary;
+  .card-header {
+    background-color: $color-white;
+  }
 }
 .table-card {
   max-height: 300px;

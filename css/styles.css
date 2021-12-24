@@ -22,9 +22,30 @@ h4 {
 
 .navbar {
   background-color: #001233; }
+  .navbar .navbar-nav a.nav-link:hover, .navbar .navbar-nav a.nav-link:focus, .navbar .navbar-nav a.nav-link:active {
+    color: #ff8052; }
+  .navbar .btn-register {
+    background-color: #658ef6;
+    color: white;
+    transition: filter 0.2s; }
+    .navbar .btn-register:hover {
+      filter: brightness(80%); }
 
-.stats-card {
-  border-top: 2px solid #658ef6; }
+.modal-content .modal-header {
+  background-color: #658ef6; }
+
+.modal-content .modal-body .form-group .btn-register {
+  background-color: #658ef6;
+  color: white;
+  transition: filter 0.2s; }
+  .modal-content .modal-body .form-group .btn-register:hover {
+    filter: brightness(80%); }
+
+form #selectCountry {
+  border: 2px solid #658ef6; }
+
+.stats-card .card-header {
+  background-color: white; }
 
 .table-card {
   max-height: 300px;

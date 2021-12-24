@@ -67,7 +67,7 @@
         </div>
         <div class="navbar-text ml-3">
           <button
-            class="btn btn-info btn-sm px-3"
+            class="btn btn-sm px-3 btn-register"
             type="button"
             data-toggle="modal"
             data-target="#registerForm"
@@ -80,7 +80,7 @@
     <div class="modal fade" id="registerForm" role="dialog">
       <div class="modal-dialog modal-sm" role="document">
         <div class="modal-content">
-          <div class="modal-header bg-info text-white">
+          <div class="modal-header text-white">
             <h5 class="modal-title lead" id="registerFormLabel">
               Register for updates
             </h5>
@@ -118,7 +118,7 @@
                 >
                   Cancel
                 </button>
-                <button class="btn btn-info" type="submit">Submit</button>
+                <button class="btn btn-register" type="submit">Submit</button>
               </div>
             </form>
           </div>
@@ -128,7 +128,8 @@
     <div class="container d-md-flex d-row mt-3 mt-md-4">
       <div class="col-md-8 mr-md-5">
         <div class="row row-content justify-content-center">
-          <form px-2>
+          <h3 class="py-2">Coronavirus data by Country</h3>
+          <form class="py-1">
             <div class="form-group row">
               <label
                 for="selectCountry"
@@ -160,21 +161,29 @@
                 <strong><small>Coronavirus Cases</small></strong>
               </p>
               <div class="card-content p-2 text-center border rounded">
-                <p class="small"><span class="lead">100k</span> Cases</p>
-                <p class="small"><span class="lead">10k</span> Recoveries</p>
-                <p class="small"><span class="lead">500</span> Deaths</p>
+                <p class="small"><span class="lead">100k</span> New Cases</p>
+                <p class="small">
+                  <span class="lead">10k</span> Confirmed cases
+                </p>
+                <p class="small"><span class="lead">500</span> Cases/1m pop.</p>
               </div>
             </div>
           </div>
           <div class="col-md-4">
             <div class="stats-card bg-white mb-2 mb-md-0 rounded">
               <p class="lead card-header text-center">
-                <strong><small>Recoveries</small></strong>
+                <strong><small>Recovered</small></strong>
               </p>
               <div class="card-content p-2 text-center border rounded">
-                <p class="small"><span class="lead">100k</span> Cases</p>
-                <p class="small"><span class="lead">10k</span> Recoveries</p>
-                <p class="small"><span class="lead">500</span> Deaths</p>
+                <p class="small">
+                  <span class="lead">100k</span> New Recovered
+                </p>
+                <p class="small">
+                  <span class="lead">10k</span> Total Recovered
+                </p>
+                <p class="small">
+                  <span class="lead">500</span> Recovered/1m pop.
+                </p>
               </div>
             </div>
           </div>
@@ -184,15 +193,17 @@
                 <strong><small>Deaths</small></strong>
               </p>
               <div class="card-content p-2 text-center border rounded">
-                <p class="small"><span class="lead">100k</span> Cases</p>
-                <p class="small"><span class="lead">10k</span> Recoveries</p>
-                <p class="small"><span class="lead">500</span> Deaths</p>
+                <p class="small"><span class="lead">100k</span> Deaths</p>
+                <p class="small"><span class="lead">10k</span> Total Deaths</p>
+                <p class="small">
+                  <span class="lead">500</span> Deaths/1m pop.
+                </p>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="col-md-4 mt-3 mt-md-0 ml-md-5">
+      <div class="col-md-3 mt-3 mt-md-0">
         <div class="card table-card px-2">
           <table class="table table-striped table-hover">
             <thead>
