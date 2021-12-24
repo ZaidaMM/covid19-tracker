@@ -4,9 +4,12 @@ $color-header: hsl(60, 28%, 92%);
 $color-pale: hsl(227, 100%, 98%);
 $color-white: hsl(0, 0%, 100%);
 
+$body-bg: hsl(60, 28%, 92%);
+
 $font-family-base: 'Roboto', sans-serif;
 
-$body-bg: hsl(60, 28%, 92%);
+$border-width: 2px;
+$border-color: $color-secondary;
 
 * {
   margin: 0;
@@ -15,14 +18,13 @@ $body-bg: hsl(60, 28%, 92%);
 }
 body {
   font-family: $font-family-base;
-  background-color: $body-bg;
+  background-color: $color-pale;
   line-height: 1;
 }
-a,
-a:hover {
-  color: inherit;
-  text-decoration: none;
+h4 {
+  letter-spacing: 1px;
 }
+
 .jumbotron {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)),
     url('/img/coronavirus.jpeg');
@@ -36,4 +38,20 @@ a:hover {
 }
 .navbar {
   background-color: $color-primary;
+}
+.stats-card {
+  border-top: 2px solid $color-secondary;
+}
+.table-card {
+  max-height: 300px;
+  overflow-y: scroll;
+  table {
+    tbody {
+      tr {
+        td {
+          padding: 0.25rem;
+        }
+      }
+    }
+  }
 }
