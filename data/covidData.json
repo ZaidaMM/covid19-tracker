@@ -1,4 +1,10 @@
 [
+  {"updated":1640560609578,
+    "country": "Worldwide",
+    "countryInfo": {
+      "iso2": "ALL"
+    },"cases":280230298,"todayCases":336082,"deaths":5416185,"todayDeaths":2911,"recovered":250326060,"todayRecovered":299271,"active":24488053,"critical":88420,"casesPerOneMillion":35951,"deathsPerOneMillion":694.8,"tests":4599617468,"testsPerOneMillion":584370.95,"population":7871057687,"oneCasePerPeople":0,"oneDeathPerPeople":0,"oneTestPerPeople":0,"activePerOneMillion":3111.15,"recoveredPerOneMillion":31803.36,"criticalPerOneMillion":11.23,"affectedCountries":224
+  },
   {
     "updated": 1640275564667,
     "country": "Afghanistan",

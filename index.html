@@ -10,10 +10,10 @@
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     />
-    <link
+    <!-- <link
       rel="stylesheet"
       href="node_modules/font-awesome/css/font-awesome.min.css"
-    />
+    /> -->
     <link rel="stylesheet" href="css/styles.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
@@ -132,31 +132,30 @@
       <div class="col-md-8 mr-md-5">
         <div class="row row-content justify-content-center">
           <h3 class="py-2">Coronavirus data by Country</h3>
+        </div>
+        <div class="row row-content justify-content-center">
           <form class="py-1">
             <div class="form-group row">
               <label
-                for="selectCountry"
                 class="col-7 col-md-6 col-form-label text-center"
-                ><h4>Worldwide</h4></label
+                for="selectCountry"
               >
+                <h4 id="selectedCountry">Worldwide</h4>
+              </label>
               <div class="col">
                 <select
+                  onchange="onCountryChange(this)"
                   name="selectCountry"
                   id="selectCountry"
                   class="form-control"
                 >
                   <option value="worldwide">Worldwide</option>
-                  <option value="australia">Australia</option>
-                  <option value="italy">Italy</option>
-                  <option value="portugal">Portugal</option>
-                  <option value="united kingdom">United Kingdom</option>
-                  <option value="united states">United States</option>
-                  <option value="venezuela">Venezuela</option>
                 </select>
               </div>
             </div>
           </form>
         </div>
+
         <div class="row row-content">
           <div class="col-md-4">
             <div class="stats-card bg-white mb-2 mb-md-0 rounded">
@@ -164,11 +163,15 @@
                 <strong><small>Coronavirus Cases</small></strong>
               </p>
               <div class="card-content p-2 text-center border rounded">
-                <p class="small"><span class="lead">100k</span> New Cases</p>
                 <p class="small">
-                  <span class="lead">10k</span> Confirmed cases
+                  <span class="lead" id="casesToday">336k</span> Today Cases
                 </p>
-                <p class="small"><span class="lead">500</span> Cases/1m pop.</p>
+                <p class="small">
+                  <span class="lead" id="casesTotal">280m</span> Confirmed cases
+                </p>
+                <p class="small" id="casesPerMillionPop">
+                  <span class="lead">36k</span> Cases/1m pop.
+                </p>
               </div>
             </div>
           </div>
@@ -179,13 +182,13 @@
               </p>
               <div class="card-content p-2 text-center border rounded">
                 <p class="small">
-                  <span class="lead">100k</span> New Recovered
+                  <span class="lead">299k</span> Today Recovered
                 </p>
                 <p class="small">
-                  <span class="lead">10k</span> Total Recovered
+                  <span class="lead">250m</span> Total Recovered
                 </p>
                 <p class="small">
-                  <span class="lead">500</span> Recovered/1m pop.
+                  <span class="lead">32k</span> Recovered/1m pop.
                 </p>
               </div>
             </div>
@@ -196,10 +199,10 @@
                 <strong><small>Deaths</small></strong>
               </p>
               <div class="card-content p-2 text-center border rounded">
-                <p class="small"><span class="lead">100k</span> Deaths</p>
-                <p class="small"><span class="lead">10k</span> Total Deaths</p>
+                <p class="small"><span class="lead">3k</span> Today Deaths</p>
+                <p class="small"><span class="lead">5m</span> Total Deaths</p>
                 <p class="small">
-                  <span class="lead">500</span> Deaths/1m pop.
+                  <span class="lead">695</span> Deaths/1m pop.
                 </p>
               </div>
             </div>
@@ -299,5 +302,6 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
