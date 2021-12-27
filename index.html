@@ -128,7 +128,7 @@
         </div>
       </div>
     </div>
-    <div class="container d-md-flex d-row mt-3 mt-md-4">
+    <div class="container main-container d-md-flex d-row mt-3 mt-md-4">
       <div class="col-md-8 mr-md-5">
         <div class="row row-content justify-content-center">
           <h3 class="py-2">Coronavirus Data by Country</h3>
@@ -217,10 +217,13 @@
             </div>
           </div>
         </div>
+        <div class="row row-content">
+          <img src="/img/map.png" alt="" class="d-block w-100 mt-3" />
+        </div>
       </div>
       <div class="col-md-3 col-lg-4 mt-3 mt-md-0">
         <div class="card table-card px-2">
-          <table class="table table-striped table-hover">
+          <table class="table table-striped table-hover" id="statsTable">
             <thead>
               <tr>
                 <th scope="col" class="pl-1">Country</th>
@@ -229,84 +232,138 @@
                 </th>
               </tr>
             </thead>
-            <tbody class="small">
+            <tbody class="small" id="tableBody">
               <tr>
                 <td>Australia</td>
-                <td class="text-right">10k cases</td>
+                <td class="text-right">8k Cases</td>
               </tr>
               <tr>
-                <td>Italy</td>
-                <td class="text-right">10k cases</td>
+                <td>Austria</td>
+                <td class="text-right">2k Cases</td>
+              </tr>
+              <tr>
+                <td>Azerbaijan</td>
+                <td class="text-right">1k cases</td>
+              </tr>
+              <tr>
+                <td>Bolivia</td>
+                <td class="text-right">2k Cases</td>
+              </tr>
+              <tr>
+                <td>Chile</td>
+                <td class="text-right">2k Cases</td>
+              </tr>
+              <tr>
+                <td>Croatia</td>
+                <td class="text-right">4k Cases</td>
+              </tr>
+              <tr>
+                <td>Czechia</td>
+                <td class="text-right">8k Cases</td>
+              </tr>
+              <tr>
+                <td>Denmark</td>
+                <td class="text-right">12k Cases</td>
+              </tr>
+              <tr>
+                <td>Finland</td>
+                <td class="text-right">3k Cases</td>
+              </tr>
+              <tr>
+                <td>Georgia</td>
+                <td class="text-right">2k Cases</td>
+              </tr>
+              <tr>
+                <td>Germany</td>
+                <td class="text-right">3k Cases</td>
+              </tr>
+              <tr>
+                <td>Hungary</td>
+                <td class="text-right">4k Cases</td>
+              </tr>
+              <tr>
+                <td>Lithuania</td>
+                <td class="text-right">2k Cases</td>
+              </tr>
+              <tr>
+                <td>Mexico</td>
+                <td class="text-right">3k Cases</td>
+              </tr>
+              <tr>
+                <td>Netherlands</td>
+                <td class="text-right">13k Cases</td>
+              </tr>
+              <tr>
+                <td>Poland</td>
+                <td class="text-right">17k Cases</td>
               </tr>
               <tr>
                 <td>Portugal</td>
-                <td class="text-right">10k cases</td>
+                <td class="text-right">11k Cases</td>
               </tr>
               <tr>
-                <td>United Kingdom</td>
-                <td class="text-right">10k cases</td>
+                <td>Russia</td>
+                <td class="text-right">26k Cases</td>
               </tr>
               <tr>
-                <td>United States</td>
-                <td class="text-right">10k cases</td>
+                <td>S.Korea</td>
+                <td class="text-right">7k Cases</td>
               </tr>
               <tr>
-                <td>Venezuela</td>
-                <td class="text-right">10k cases</td>
+                <td>Slovakia</td>
+                <td class="text-right">3k Cases</td>
               </tr>
               <tr>
-                <td>Australia</td>
-                <td class="text-right">10k cases</td>
+                <td>Switzerland</td>
+                <td class="text-right">6k Cases</td>
               </tr>
               <tr>
-                <td>Italy</td>
-                <td class="text-right">10k cases</td>
+                <td>Thailand</td>
+                <td class="text-right">3k Cases</td>
               </tr>
               <tr>
-                <td>Portugal</td>
-                <td class="text-right">10k cases</td>
+                <td>Ukraine</td>
+                <td class="text-right">7k Cases</td>
               </tr>
               <tr>
-                <td>United Kingdom</td>
-                <td class="text-right">10k cases</td>
+                <td>Vietnam</td>
+                <td class="text-right">16k Cases</td>
               </tr>
               <tr>
-                <td>United States</td>
-                <td class="text-right">10k cases</td>
-              </tr>
-              <tr>
-                <td>Venezuela</td>
-                <td class="text-right">10k cases</td>
-              </tr>
-              <tr>
-                <td>Australia</td>
-                <td class="text-right">10k cases</td>
-              </tr>
-              <tr>
-                <td>Italy</td>
-                <td class="text-right">10k cases</td>
-              </tr>
-              <tr>
-                <td>Portugal</td>
-                <td class="text-right">10k cases</td>
-              </tr>
-              <tr>
-                <td>United Kingdom</td>
-                <td class="text-right">10k cases</td>
-              </tr>
-              <tr>
-                <td>United States</td>
-                <td class="text-right">10k cases</td>
-              </tr>
-              <tr>
-                <td>Venezuela</td>
-                <td class="text-right">10k cases</td>
+                <td>Zambia</td>
+                <td class="text-right">3k Cases</td>
               </tr>
             </tbody>
           </table>
         </div>
       </div>
     </div>
+    <footer>
+      <div class="container mt-4">
+        <div class="row py-4">
+          <div class="col-4">
+            <span class="lead">LINKS</span>
+            <ul class="list-unstyled mt-2">
+              <li>
+                <a href="#">Home</a>
+              </li>
+              <li>
+                <a href="#">Data</a>
+              </li>
+              <li>
+                <a href="#">About</a>
+              </li>
+              <li>
+                <a href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-6 text-center">
+            <span class="lead">SOCIAL</span>
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>

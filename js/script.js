@@ -28,7 +28,9 @@ fetch('../data/covidData.json')
 
 function onCountryChange(name) {
   const countryCode = name.options[name.selectedIndex].value;
+
   const selectedCountryData = countryData[countryCode];
+
   selectedCountry.innerHTML = selectedCountryData.country;
   casesToday.innerHTML = selectedCountryData.todayCases;
   casesTotal.innerHTML = selectedCountryData.cases;

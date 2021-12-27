@@ -28,8 +28,8 @@ h4 {
     background-color: #658ef6;
     color: white;
     transition: filter 0.2s; }
-    .navbar .btn-register:hover {
-      filter: brightness(80%); }
+    .navbar .btn-register:hover, .navbar .btn-register:focus, .navbar .btn-register:active {
+      color: #001233; }
 
 .modal-content .modal-header {
   background-color: #658ef6; }
@@ -41,14 +41,24 @@ h4 {
   .modal-content .modal-body .form-group .btn-register:hover {
     filter: brightness(80%); }
 
-form #selectCountry {
+.main-container form #selectCountry {
   border: 2px solid #658ef6; }
 
-.stats-card .card-header {
+.main-container .stats-card .card-header {
   background-color: white; }
 
-.table-card {
+.main-container .table-card {
   max-height: 300px;
   overflow-y: scroll; }
-  .table-card table tbody tr td {
+  .main-container .table-card table tbody tr td {
     padding: 0.25rem; }
+
+footer {
+  background-color: #001233;
+  color: white; }
+  footer .lead {
+    color: white; }
+  footer ul li {
+    padding-top: 10px; }
+    footer ul li a {
+      color: white; }
