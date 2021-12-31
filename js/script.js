@@ -1,16 +1,14 @@
-const select = document.getElementById('selectCountry');
-const selectedCountry = document.getElementById('selectedCountry');
-const casesToday = document.getElementById('casesToday');
-const casesTotal = document.getElementById('casesTotal');
-const casesPerMillionPop = document.getElementById('casesPerMillionPop');
-const recoveredToday = document.getElementById('recoveredToday');
-const recoveredTotal = document.getElementById('recoveredTotal');
-const recoveredPerMillionPop = document.getElementById(
-  'recoveredPerMillionPop'
-);
-const deathsToday = document.getElementById('deathsToday');
-const deathsTotal = document.getElementById('deathsTotal');
-const deathsPerMillionPop = document.getElementById('deathsPerMillionPop');
+var select = document.getElementById('selectCountry');
+var selectedCountry = document.getElementById('selectedCountry');
+var casesToday = document.getElementById('casesToday');
+var casesTotal = document.getElementById('casesTotal');
+var casesPerMillionPop = document.getElementById('casesPerMillionPop');
+var recoveredToday = document.getElementById('recoveredToday');
+var recoveredTotal = document.getElementById('recoveredTotal');
+var recoveredPerMillionPop = document.getElementById('recoveredPerMillionPop');
+var deathsToday = document.getElementById('deathsToday');
+var deathsTotal = document.getElementById('deathsTotal');
+var deathsPerMillionPop = document.getElementById('deathsPerMillionPop');
 
 var countryData = {};
 
@@ -32,9 +30,9 @@ fetch('../data/covidData.json')
   });
 
 function onCountryChange(name) {
-  const countryCode = name.options[name.selectedIndex].value;
+  var countryCode = name.options[name.selectedIndex].value;
 
-  const selectedCountryData = countryData[countryCode];
+  var selectedCountryData = countryData[countryCode];
 
   selectedCountry.innerHTML = selectedCountryData.country;
   casesToday.innerHTML = selectedCountryData.todayCases;
