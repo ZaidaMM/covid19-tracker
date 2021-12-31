@@ -79,6 +79,9 @@ h4 {
 }
 .main-container {
   form {
+    #selectedCountry {
+      font-size: 1.4rem;
+    }
     #selectCountry {
       border: 2px solid $color-secondary;
     }
