@@ -12,22 +12,15 @@ var deathsPerMillionPop = document.getElementById('deathsPerMillionPop');
 
 var countryData = {};
 
-fetch('../data/covidData.json')
-  .then(function (response) {
-    return response.json();
-  })
-  .then(function (data) {
-    countryData = data;
-    data.forEach(function (country) {
-      select.innerHTML +=
-        '<option value= ' +
-        country.countryInfo.iso2 +
-        '>' +
-        country.country +
-        '</option>';
-      countryData[country.countryInfo.iso2] = country;
-    });
-  });
+data.forEach(function (country) {
+  select.innerHTML +=
+    '<option value= ' +
+    country.countryInfo.iso2 +
+    '>' +
+    country.country +
+    '</option>';
+  countryData[country.countryInfo.iso2] = country;
+});
 
 function onCountryChange(name) {
   var countryCode = name.options[name.selectedIndex].value;
